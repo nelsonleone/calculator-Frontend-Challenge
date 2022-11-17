@@ -35,7 +35,7 @@ button{
 .toggle-text{
     font-size:  12px;
     position: absolute;
-    top:35px;
+    top:30px;
     right: 80px;
 }
 .toggle1,
@@ -107,6 +107,9 @@ button{
     }
     .calculator-grid{
         margin-block: 2em;
+    }
+    .toggle-text{
+        top:35px;
     }
     .input-buttons{
         gap: 12px;
