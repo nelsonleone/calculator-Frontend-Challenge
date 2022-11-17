@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="script.js" type="module" defer></script>
+  <title>Frontend Mentor | Calculator app</title>
+  <style>
+
+  </style>
+</head>
+<body data-theme class="theme-1" >
+  <div class="calculator-grid">
+    <div class="toggle-display">
+      <h1>calc</h1>
+      <div class="toggle-theme">
+        <span class="toggle-text">THEME</span>
+        <span class="toggle1 toggleNum">1</span>
+        <span class="toggle2 toggleNum">2</span>
+        <span class="toggle3 toggleNum">3</span>
+        <div class="toggle-cntnr"><span id="toggle-button" class="toggle-icon"></span></div>
+      </div>
+    </div>
+
+    <div class="output-display">
+      <div  data-prev-operand class="prev-operand"></div>
+      <div  data-current-operand class="current-operand"></div>
+    </div>
+
+    <div class="input-buttons">
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-delete class="del" id="del">DEL</button>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operation>+</button> 
+      <button data-number>1</button> 
+      <button data-number>2</button> 
+      <button data-number>3</button> 
+      <button data-operation>-</button> 
+      <button data-number>.</button> 
+      <button data-number>0</button> 
+      <button data-operation>/</button> 
+      <button data-operation>x</button> 
+      <button data-reset class="span-two" id="reset">RESET</button> 
+      <button data-equals class="span-two" id="equals">=</button> 
+    </div>
+  </div>
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. -->
+  </div>
+</body>
+</html>

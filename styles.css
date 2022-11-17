@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+button{
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.calculator-grid{
+    margin-block: 1em;
+    padding-inline: 1em;
+}
+.toggle-display{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+.toggle-text{
+    font-size:  12px;
+    position: absolute;
+    top:25px;
+    right: 80px;
+}
+.toggle1,
+.toggle2,
+.toggle3{
+    margin-left: 8px;
+    cursor: pointer;
+}
+.toggle-cntnr{
+    position: relative;
+    width: 60px;
+    height: 20px;
+    margin-left: 7px;
+    border-radius: 20px;
+    top:5px;
+}
+.toggle-icon{
+    position: absolute;
+    border-radius: 10px;;
+    top:4px;
+    left:10%;
+    width: 12px;
+    height:12px;
+}
+
+.output-display{
+    margin-top: 1.2em;
+    height: 78px;
+    padding-inline: 1em;
+    padding-bottom: 3em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+.prev-operand{
+    margin-block: .5em;
+}
+.current-operand{
+    font-size: 38px;
+}
+
+.input-buttons{
+    margin-top:1em;
+    padding: 1em;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(4,65px);
+    grid-template-rows: repeat(5,60px) ;
+    border-radius: 10px;
+}
+
+.input-buttons > button{
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.span-two{
+    grid-column: span 2;
+    height: 45px;
+}
+
+
+
+@media (min-width:600px) {
+    h1{
+        font-size: 40px;
+    }
+    .calculator-grid{
+        margin-block: 2em;
+    }
+    .input-buttons{
+        gap: 12px;
+        grid-template-columns: repeat(4,75px);
+        grid-template-rows: repeat(5,70px) ;
+        border-radius: 15px;
+    }
+    .input-buttons > button{
+        font-size: 32px;
+    }
+    #reset,
+    #equals{
+        height: 90%;
+        margin-top: .2em;
+    }
+    #reset,
+    #del{
+        font-size: 20px;
+    }
+}
+
